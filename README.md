@@ -1,4 +1,4 @@
-# Utilizar el comando 
+# Utilizar el comando en cmd Carpeta LaravelAPI
 -composer install, para instalar la carpeta vendor
 
 -php artisan key:generate, para generar la llave de aplicacion
