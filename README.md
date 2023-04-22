@@ -1,9 +1,9 @@
 # Utilizar el comando 
--composer install para instalar la carpeta vendor
+-composer install, para instalar la carpeta vendor
 
--php artisan key:generate para generar la llave
+-php artisan key:generate, para generar la llave de aplicacion
 
--editar el env. en caso de que sea necesario
+-editar el env. , en caso de que sea necesario
 
 # Recomendación 
 colocar el proyecto en la carpeta www o htdocs o de la forma en que la url quede de la siguiente manera http://localhost/DSS_API-main/Laravel_API/public/api/clientes
