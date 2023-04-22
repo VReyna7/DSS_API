@@ -1,5 +1,5 @@
 <?php
-    $url = 'http://localhost/Laravel_API/public/api/clientes';
+    $url = 'http://localhost/DSS_API-main/Laravel_API/public/api/clientes';
     $client = curl_init($url);
     curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
     $response=curl_exec($client);
@@ -123,7 +123,7 @@
     <?php
 if(!empty($_GET)){
     if($_GET['accion']=='eliminar'){
-        $urlDelete = 'http://localhost/Laravel_API/public/api/clientes/'.$_GET['id'];
+        $urlDelete = 'http://localhost/DSS_API-main/Laravel_API/public/api/clientes/'.$_GET['id'];
         $clientDelete = curl_init($urlDelete);
         curl_setopt($clientDelete,CURLOPT_RETURNTRANSFER,true);
         curl_setopt($clientDelete,CURLOPT_CUSTOMREQUEST,"DELETE");
@@ -135,7 +135,7 @@ if(!empty($_GET)){
           }
 
     }elseif($_GET['accion']=='editar'){
-        $urlUpdate= 'http://localhost/Laravel_API/public/api/clientes/'.$_GET['id'];
+        $urlUpdate= 'http://localhost/DSS_API-main/Laravel_API/public/api/clientes/'.$_GET['id'];
         $clientUpdate = curl_init($urlUpdate);
         curl_setopt($clientUpdate,CURLOPT_RETURNTRANSFER,true);
         curl_setopt($clientUpdate,CURLOPT_CUSTOMREQUEST,"PUT");
@@ -167,7 +167,7 @@ DATA;
 }
 if(!empty($_POST)){
 echo 'culero';
-$urlInsert = "http://localhost/Laravel_API/public/api/clientes";
+$urlInsert = "http://localhost/DSS_API-main/Laravel_API/public/api/clientes";
 $clientInsert = curl_init($urlInsert);
 curl_setopt($clientInsert, CURLOPT_URL, $urlInsert);
 curl_setopt($clientInsert, CURLOPT_POST, true);
